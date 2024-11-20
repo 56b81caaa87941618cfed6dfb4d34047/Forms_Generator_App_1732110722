@@ -67,8 +67,9 @@ const Header: React.FC = () => {
               <option value="yellow">Yellow</option>
             </select>
           </form>
-          <div className="flex justify-center ml-4">
+          <div className="flex justify-center ml-4 space-x-2">
             <img src="https://raw.githubusercontent.com/56b81caaa87941618cfed6dfb4d34047/Forms_Generator_App_1732110722/main/src/assets/images/f15e4ee10ed24166995b7b1be64795dc.jpeg" alt="Car" className="h-8 w-auto" />
+            <img src="https://raw.githubusercontent.com/56b81caaa87941618cfed6dfb4d34047/Forms_Generator_App_1732110722/main/src/assets/images/2548111ca4b94e6c93fe9bb1cf49a362.jpeg" alt="Cat" className="h-8 w-auto" />
           </div>
         </div>
       </div>
