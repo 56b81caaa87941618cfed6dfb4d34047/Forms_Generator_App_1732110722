@@ -75,5 +75,15 @@
         "source": "base_assistant",
         "content": "The form to select the user's favorite fruit has been added to the header component. Would you like to do anything else?",
         "metadata": {}
+    },
+    {
+        "id": "a6fa99b8-34f9-4f45-a11c-18ad227a9ca8",
+        "timestamp": "2024-11-20T14:05:00.468524Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "do it with React.useState instead",
+        "metadata": {
+            "component_id": "Header1732110725"
+        }
     }
 ]
