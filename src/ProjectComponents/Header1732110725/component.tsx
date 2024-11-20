@@ -3,21 +3,37 @@ import React from 'react';
 const Header: React.FC = () => {
   const [selectedFruit, setSelectedFruit] = React.useState<string>('');
   const [selectedColor, setSelectedColor] = React.useState<string>('');
+  const [title, setTitle] = React.useState<string>('FormCraft');
 
 
   const handleFruitChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedFruit(event.target.value);
+    updateTitle(event.target.value, selectedColor);
   };
 
   const handleColorChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedColor(event.target.value);
+    updateTitle(selectedFruit, event.target.value);
   };
+
+  const updateTitle = (fruit: string, color: string) => {
+    if (fruit && color) {
+      setTitle(`FormCraft - ${fruit} ${color}`);
+    } else if (fruit) {
+      setTitle(`FormCraft - ${fruit}`);
+    } else if (color) {
+      setTitle(`FormCraft - ${color}`);
+    } else {
+      setTitle('FormCraft');
+    }
+  };
+
 
 
   return (
     <header className="bg-blue-500 text-white p-4 w-full h-full">
       <div className="container mx-auto flex justify-between items-center h-full">
-        <div className="text-2xl font-bold">FormCraft</div>
+        <div className="text-2xl font-bold">{title}</div>
         <div className="flex items-center space-x-4">
           <form className="flex items-center">
             <label htmlFor="fruitSelect" className="mr-2">Favorite Fruit:</label>
