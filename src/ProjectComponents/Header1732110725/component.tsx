@@ -34,6 +34,9 @@ const Header: React.FC = () => {
     <header className="bg-blue-500 text-white p-4 w-full h-full">
       <div className="container mx-auto flex justify-between items-center h-full">
         <div className="text-2xl font-bold">{title}</div>
+        <div className="flex justify-center mt-2">
+          <img src="https://raw.githubusercontent.com/56b81caaa87941618cfed6dfb4d34047/Forms_Generator_App_1732110722/main/src/assets/images/f15e4ee10ed24166995b7b1be64795dc.jpeg" alt="Car" className="h-8 w-auto" />
+        </div>
         <div className="flex items-center space-x-4">
           <form className="flex items-center">
             <label htmlFor="fruitSelect" className="mr-2">Favorite Fruit:</label>
