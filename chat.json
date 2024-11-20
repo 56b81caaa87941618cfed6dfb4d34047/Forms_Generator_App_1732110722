@@ -16,5 +16,13 @@
         "metadata": {
             "component_id": "Header1732110725"
         }
+    },
+    {
+        "id": "691e6af7-620d-45b6-bdfe-7f90bd1603eb",
+        "timestamp": "2024-11-20T13:53:17.513242Z",
+        "role": "assistant",
+        "source": "base_assistant",
+        "content": "To add a form for selecting the user's favorite fruit, you need to drag and drop a form component from the \"Components\" tab into your canvas. After that, I'll guide you through customizing it.",
+        "metadata": {}
     }
 ]
