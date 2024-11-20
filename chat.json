@@ -279,5 +279,15 @@
         "source": "base_assistant",
         "content": "Now the title will update to reflect the selected fruit and color as soon as the user selects an option. Is there anything else you would like to adjust or add?",
         "metadata": {}
+    },
+    {
+        "id": "45afb049-fcf0-42b0-bc2c-9f61728d00f9",
+        "timestamp": "2024-11-20T14:44:30.520242Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "Add a small image of a car in the center",
+        "metadata": {
+            "component_id": "Header1732110725"
+        }
     }
 ]
