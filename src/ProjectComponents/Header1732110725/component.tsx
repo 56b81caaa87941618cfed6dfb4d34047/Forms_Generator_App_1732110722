@@ -2,31 +2,54 @@ import React from 'react';
 
 const Header: React.FC = () => {
   const [selectedFruit, setSelectedFruit] = React.useState<string>('');
+  const [selectedColor, setSelectedColor] = React.useState<string>('');
+
 
   const handleFruitChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedFruit(event.target.value);
   };
 
+  const handleColorChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedColor(event.target.value);
+  };
+
+
   return (
     <header className="bg-blue-500 text-white p-4 w-full h-full">
       <div className="container mx-auto flex justify-between items-center h-full">
         <div className="text-2xl font-bold">FormCraft</div>
-        <form className="flex items-center">
-          <label htmlFor="fruitSelect" className="mr-2">Favorite Fruit:</label>
-          <select
-            id="fruitSelect"
-            value={selectedFruit}
-            onChange={handleFruitChange}
-            className="bg-white text-blue-500 p-2 rounded-lg"
-          >
-            <option value="">Select a fruit</option>
-            <option value="apple">Apple</option>
-            <option value="banana">Banana</option>
-            <option value="orange">Orange</option>
-            <option value="grape">Grape</option>
-          </select>
-        </form>
-      </div>
+        <div className="flex items-center space-x-4">
+          <form className="flex items-center">
+            <label htmlFor="fruitSelect" className="mr-2">Favorite Fruit:</label>
+            <select
+              id="fruitSelect"
+              value={selectedFruit}
+              onChange={handleFruitChange}
+              className="bg-white text-blue-500 p-2 rounded-lg"
+            >
+              <option value="">Select a fruit</option>
+              <option value="apple">Apple</option>
+              <option value="banana">Banana</option>
+              <option value="orange">Orange</option>
+              <option value="grape">Grape</option>
+            </select>
+          </form>
+          <form className="flex items-center">
+            <label htmlFor="colorSelect" className="mr-2">Favorite Color:</label>
+            <select
+              id="colorSelect"
+              value={selectedColor}
+              onChange={handleColorChange}
+              className="bg-white text-blue-500 p-2 rounded-lg"
+            >
+              <option value="">Select a color</option>
+              <option value="red">Red</option>
+              <option value="green">Green</option>
+              <option value="blue">Blue</option>
+              <option value="yellow">Yellow</option>
+            </select>
+          </form>
+        </div>
     </header>
   );
 };
