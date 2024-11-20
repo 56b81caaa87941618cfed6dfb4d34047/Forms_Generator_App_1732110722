@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Header: React.FC = () => {
-  const [selectedFruit, setSelectedFruit] = useState<string>('');
+  const [selectedFruit, setSelectedFruit] = React.useState<string>('');
 
   const handleFruitChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedFruit(event.target.value);
