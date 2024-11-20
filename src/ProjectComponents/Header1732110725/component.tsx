@@ -31,7 +31,7 @@ const Header: React.FC = () => {
 
 
   return (
-    <header className="bg-blue-500 text-white p-4 w-full h-full">
+    <header className="bg-blue-500 text-white p-4 w-full h-full bg-cover bg-center" style={{backgroundImage: "url('https://raw.githubusercontent.com/56b81caaa87941618cfed6dfb4d34047/Forms_Generator_App_1732110722/main/src/assets/images/723944a963784706bf363131300b01bc.jpeg')"}}>
       <div className="container mx-auto flex justify-between items-center h-full">
         <div className="text-2xl font-bold">{title}</div>
         <div className="flex justify-center mt-2">
