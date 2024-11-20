@@ -1,0 +1,23 @@
+{
+    "name": "example",
+    "prefix": "%#PLACEHOLDER",
+    "placeholderMappings": {
+        "Header": [
+            "APPLICATION_NAME"
+        ],
+        "Hero": [
+            "HERO_HEADING_TEXT",
+            "HERO_SUBHEADING_TEXT"
+        ],
+        "Footer": [
+            "APPLICATION_NAME",
+            "FOOTER_TEXT"
+        ]
+    },
+    "placeholders": {
+        "APPLICATION_NAME": "FormCraft",
+        "HERO_HEADING_TEXT": "Create, Manage, and Share Forms with Ease",
+        "HERO_SUBHEADING_TEXT": "Streamline your data collection process with our intuitive form builder and management platform",
+        "FOOTER_TEXT": "\u00a9 2023 FormCraft. Simplifying form creation and data collection for businesses and individuals."
+    }
+}
