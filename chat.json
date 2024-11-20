@@ -534,5 +534,15 @@
         "source": "base_assistant",
         "content": "The car image has been moved to the right side of the header component. Anything else you'd like to adjust or add?",
         "metadata": {}
+    },
+    {
+        "id": "e27077fa-2121-4fa3-9c65-7ac44e56cef5",
+        "timestamp": "2024-11-20T14:54:07.250665Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "add a small image at the right, with a cat on it",
+        "metadata": {
+            "component_id": "Footer1732110725"
+        }
     }
 ]
