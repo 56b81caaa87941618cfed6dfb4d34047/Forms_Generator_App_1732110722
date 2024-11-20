@@ -330,5 +330,15 @@
         "source": "base_assistant",
         "content": "A small image of a car has been added to the center of the header component. Is there anything else you would like to do?",
         "metadata": {}
+    },
+    {
+        "id": "c0aa4ff5-f7bb-4e0e-af72-303584a411f1",
+        "timestamp": "2024-11-20T14:47:25.024117Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "add a new image of a cat for the whole background",
+        "metadata": {
+            "component_id": "Header1732110725"
+        }
     }
 ]
